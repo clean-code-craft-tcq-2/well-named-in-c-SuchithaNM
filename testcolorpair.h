@@ -4,8 +4,8 @@
 #include <stdio.h>
 #include <assert.h>
 
-typedef enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
-typedef enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
+typedef enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET} MajorColor_type;
+typedef enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE} MinorColor_type;
 
 const char* MajorColorNames[] = {
     "White", "Red", "Black", "Yellow", "Violet"
@@ -13,6 +13,7 @@ const char* MajorColorNames[] = {
 
 int numberOfMajorColors =
     sizeof(MajorColorNames) / sizeof(MajorColorNames[0]);
+
 const char* MinorColorNames[] = {
     "Blue", "Orange", "Green", "Brown", "Slate"
 };
