@@ -1,4 +1,4 @@
-#include "testcolorpair.h"
+#include "ColorPair.h"
 
 
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
@@ -12,9 +12,9 @@ ColorPair GetColorFromPairNumber(int pairNumber) {
     ColorPair colorPair;
     int zeroBasedPairNumber = pairNumber - 1;
     colorPair.majorColor = 
-        (enum MajorColor)(zeroBasedPairNumber / numberOfMinorColors);
+        (MajorColor_type)(zeroBasedPairNumber / numberOfMinorColors);
     colorPair.minorColor =
-        (enum MinorColor)(zeroBasedPairNumber % numberOfMinorColors);
+        (MinorColor_type)(zeroBasedPairNumber % numberOfMinorColors);
     return colorPair;
 }
 
