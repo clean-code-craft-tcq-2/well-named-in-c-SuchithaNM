@@ -4,6 +4,8 @@
 #include <stdio.h>
 #include <assert.h>
 
+#define MAX_COLORPAIR_NAME_CHARS  16
+
 typedef enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET} MajorColor_type;
 typedef enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE} MinorColor_type;
 
