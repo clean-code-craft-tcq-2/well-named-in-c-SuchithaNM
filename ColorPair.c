@@ -1,11 +1,22 @@
 #include "ColorPair.h"
 
 
+const char * MinorColorToString(MinorColor_type minorcolor)
+{
+    return (MinorColorNames[minorcolor]);
+}
+
+const char * MajorColorToString(MajorColor_type majorcolor )
+{
+    return MajorColorNames[majorcolor];
+}
+
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
     sprintf(buffer, "%s %s",
-        MajorColorNames[colorPair->majorColor],
-        MinorColorNames[colorPair->minorColor]);
+        MajorColorToString[colorPair->majorColor],
+        MinorColorToString[colorPair->minorColor]);
 }
+
 
 
 ColorPair GetColorFromPairNumber(int pairNumber) {
