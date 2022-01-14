@@ -1,4 +1,4 @@
-ifndef COLORPAIR_H
+#ifndef COLORPAIR_H
 #define COLORPAIR_H
 
 #include <stdio.h>
