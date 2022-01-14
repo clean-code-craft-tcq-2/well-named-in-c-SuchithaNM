@@ -2,8 +2,8 @@
 
 
 void testNumberToPair(int pairNumber,
-    enum MajorColor expectedMajor,
-    enum MinorColor expectedMinor)
+    MajorColor_type expectedMajor,
+    MinorColor_type expectedMinor)
 {
     ColorPair colorPair = GetColorFromPairNumber(pairNumber);
     char colorPairNames[MAX_COLORPAIR_NAME_CHARS];
@@ -14,8 +14,8 @@ void testNumberToPair(int pairNumber,
 }
 
 void testPairToNumber(
-    enum MajorColor major,
-    enum MinorColor minor,
+    MajorColor_type major,
+    MinorColor_type minor,
     int expectedPairNumber)
 {
     ColorPair colorPair;
