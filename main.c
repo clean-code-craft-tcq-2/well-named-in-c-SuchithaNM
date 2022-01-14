@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <assert.h>
-#include "testcolor.h"
+#include <testcolor.h>
 
 
 int main() {
