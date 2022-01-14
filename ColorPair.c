@@ -1,5 +1,5 @@
 #include "ColorPair.h"
-#define MAX_COLORPAIR_NAME_CHARS  16
+
 
 int numberOfMajorColors =
     sizeof(MajorColorNames) / sizeof(MajorColorNames[0]);
