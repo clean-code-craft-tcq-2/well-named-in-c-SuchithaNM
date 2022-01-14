@@ -8,3 +8,4 @@ extern void testPairToNumber( MajorColor_type major,     MinorColor_type minor, 
 
 #endif
 
+
