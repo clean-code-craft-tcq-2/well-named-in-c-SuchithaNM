@@ -1,5 +1,5 @@
-#ifndef COLORPAIR_H
-#define COLORPAIR_H
+#ifndef COLORPAIR_H_
+#define COLORPAIR_H_
 
 #include <stdio.h>
 #include <assert.h>
