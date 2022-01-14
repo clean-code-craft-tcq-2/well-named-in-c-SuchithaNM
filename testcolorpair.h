@@ -4,8 +4,8 @@
 #include <stdio.h>
 #include <assert.h>
 
-enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
-enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
+typedef enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
+typedef enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
 
 const char* MajorColorNames[] = {
     "White", "Red", "Black", "Yellow", "Violet"
@@ -30,8 +30,8 @@ typedef struct {
 extern void ColorPairToString(const ColorPair* colorPair, char* buffer);
 extern ColorPair GetColorFromPairNumber(int pairNumber);
 extern int GetPairNumberFromColor(const ColorPair* colorPair);
-extern void testNumberToPair(int pairNumber,    enum MajorColor expectedMajor,     enum MinorColor expectedMinor);
-extern void testPairToNumber(     enum MajorColor major,     enum MinorColor minor,     int expectedPairNumber);
+extern void testNumberToPair(int pairNumber,    MajorColor expectedMajor,     MinorColor expectedMinor);
+extern void testPairToNumber(     MajorColor major,     MinorColor minor,     int expectedPairNumber);
 
 #endif
 
