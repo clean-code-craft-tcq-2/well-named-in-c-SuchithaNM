@@ -1,5 +1,11 @@
 #include "ColorPair.h"
+#define MAX_COLORPAIR_NAME_CHARS  16
 
+int numberOfMajorColors =
+    sizeof(MajorColorNames) / sizeof(MajorColorNames[0]);
+
+int numberOfMinorColors =
+    sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
 
 const char * MinorColorToString(MinorColor_type minorcolor)
 {
@@ -8,7 +14,7 @@ const char * MinorColorToString(MinorColor_type minorcolor)
 
 const char * MajorColorToString(MajorColor_type majorcolor )
 {
-    return MajorColorNames[majorcolor];
+    return (MajorColorNames[majorcolor]);
 }
 
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
@@ -16,8 +22,6 @@ void ColorPairToString(const ColorPair* colorPair, char* buffer) {
         MajorColorToString(colorPair->majorColor),
         MinorColorToString(colorPair->minorColor));
 }
-
-
 
 ColorPair GetColorFromPairNumber(int pairNumber) {
     ColorPair colorPair;
