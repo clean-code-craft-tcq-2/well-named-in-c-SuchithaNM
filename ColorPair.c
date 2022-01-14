@@ -7,15 +7,13 @@ int numberOfMajorColors =
 int numberOfMinorColors =
     sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
 
-// const char * MinorColorToString(MinorColor_type minorcolor)
-// {
-//     return (MinorColorNames[minorcolor]);
-// }
+const char* MajorColorNames[] = {
+    "White", "Red", "Black", "Yellow", "Violet"
+};
 
-// const char * MajorColorToString(MajorColor_type majorcolor )
-// {
-//     return (MajorColorNames[majorcolor]);
-// }
+const char* MinorColorNames[] = {
+    "Blue", "Orange", "Green", "Brown", "Slate"
+};
 
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
     sprintf(buffer, "%s %s",
