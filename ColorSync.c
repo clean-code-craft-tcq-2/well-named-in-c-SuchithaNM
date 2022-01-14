@@ -1,4 +1,4 @@
-#include <testcolor.h>
+#include "testcolorpair.h"
 
 
 void ColorPairToString(const ColorPair* colorPair, char* buffer) {
