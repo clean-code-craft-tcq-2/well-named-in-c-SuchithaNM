@@ -25,3 +25,4 @@ void testPairToNumber(
     printf("Got pair number %d\n", pairNumber);
     assert(pairNumber == expectedPairNumber);
 }
+
