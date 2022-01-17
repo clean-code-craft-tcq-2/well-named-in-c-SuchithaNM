@@ -36,7 +36,7 @@ int GetPairNumberFromColor(const ColorPair* colorPair) {
     return colorPair->majorColor * numberOfMinorColors +
             colorPair->minorColor + 1;
 }
-/*Added function to print the Color */
+
 void DisplayColorCoding()
 {
     int PairNumber = 0;
